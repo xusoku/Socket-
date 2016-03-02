@@ -1,0 +1,130 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=10916, tid=12500
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_15-b03
+# Java VM: Java HotSpot(TM) Client VM (23.7-b01 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00d6b400):  JavaThread "Unknown thread" [_thread_in_vm, id=12500, stack(0x00940000,0x00990000)]
+
+Stack: [0x00940000,0x00990000],  sp=0x0098f3d0,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x16f261]
+V  [jvm.dll+0x1693d6]
+V  [jvm.dll+0x2079f]
+V  [jvm.dll+0x20826]
+V  [jvm.dll+0x2e5bd]
+V  [jvm.dll+0x2e869]
+V  [jvm.dll+0x77ba1]
+V  [jvm.dll+0x77f5b]
+V  [jvm.dll+0x1290e1]
+V  [jvm.dll+0x149b3a]
+V  [jvm.dll+0xa98df]
+C  [javaw.exe+0x13ca]
+C  [javaw.exe+0x1e3c]
+C  [javaw.exe+0xa5a1]
+C  [javaw.exe+0xa62b]
+C  [KERNEL32.DLL+0x138f4]  BaseThreadInitThunk+0x24
+C  [ntdll.dll+0x65e13]  RtlUnicodeStringToInteger+0x253
+C  [ntdll.dll+0x65dde]  RtlUnicodeStringToInteger+0x21e
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00d6b400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=12500, stack(0x00940000,0x00990000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.007 loading class 0x026d46f8 done
+Event: 0.007 loading class 0x026b5960 done
+Event: 0.007 loading class 0x026b5b90
+Event: 0.007 loading class 0x026db388
+Event: 0.007 loading class 0x026db388 done
+Event: 0.007 loading class 0x026db778
+Event: 0.007 loading class 0x026db778 done
+Event: 0.007 loading class 0x02720c40
+Event: 0.007 loading class 0x02720c40 done
+Event: 0.007 loading class 0x026b5b90 done
+
+
+Dynamic libraries:
+0x00a90000 - 0x00abf000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x776c0000 - 0x7783b000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x75dd0000 - 0x75eb0000 	C:\WINDOWS\SYSTEM32\KERNEL32.DLL
+0x75ef0000 - 0x7606e000 	C:\WINDOWS\SYSTEM32\KERNELBASE.dll
+0x75d30000 - 0x75dab000 	C:\WINDOWS\SYSTEM32\ADVAPI32.dll
+0x76ba0000 - 0x76c5e000 	C:\WINDOWS\SYSTEM32\msvcrt.dll
+0x76090000 - 0x760d4000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x76520000 - 0x765cd000 	C:\WINDOWS\SYSTEM32\RPCRT4.dll
+0x743d0000 - 0x743ee000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x743c0000 - 0x743ca000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x745a0000 - 0x745f8000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x76600000 - 0x76747000 	C:\WINDOWS\SYSTEM32\USER32.dll
+0x773e0000 - 0x7752f000 	C:\WINDOWS\SYSTEM32\GDI32.dll
+0x6c350000 - 0x6c55f000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_d3c2e4e965da4528\COMCTL32.dll
+0x74650000 - 0x7480d000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x765d0000 - 0x765fb000 	C:\WINDOWS\SYSTEM32\IMM32.DLL
+0x77c00000 - 0x77cbe000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x6d9e0000 - 0x6dd2c000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x76080000 - 0x76086000 	C:\WINDOWS\SYSTEM32\PSAPI.DLL
+0x72930000 - 0x72938000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x73520000 - 0x73544000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x77370000 - 0x773cf000 	C:\WINDOWS\SYSTEM32\WS2_32.dll
+0x72970000 - 0x72993000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x75eb0000 - 0x75ee7000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x65560000 - 0x6556c000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x6cdb0000 - 0x6cdd0000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x6e540000 - 0x6e553000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+0x735f0000 - 0x7372f000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:F:\adt-bundle-windows-x86-20131030\sdk\platforms\android-18\android.jar 
+java_command: com.cooge.media.proxy.UrlAnalysis
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;F:\adt-bundle-windows-x86-20131030\sdk\tools;F:\adt-bundle-windows-x86-20131030\sdk\platform-tools;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\OpenVPN\bin;F:\adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=xusoku
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, tsc, tscinvbit
+
+Memory: 4k page, physical 8338380k(3203508k free), swap 16726988k(8509168k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.7-b01) for windows-x86 JRE (1.7.0_15-b03), built on Feb 15 2013 14:01:25 by "java_re" with unknown MS VC++:1600
+
+time: Tue Mar 01 16:41:46 2016
+elapsed time: 0 seconds
+
